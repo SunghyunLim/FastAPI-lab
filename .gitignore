@@ -1,2 +1,9 @@
-fastapi-env/
-__pycache__/
+__pycache__
+fastapi-env
+blog-env
+blog/__pycache__
+.DS_Store
+.vscode
+.gitignore
+app/.deta
+app/blog/__pycache__
