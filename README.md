@@ -16,8 +16,8 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 
 ----------
 아래 내용은 복사해온 내용
-Source code - https://github.com/bitfumes/fastapi-course 
-
+> Source code - https://github.com/bitfumes/fastapi-course 
+```
 🌟 Course Contents 🌟
 ⏳ (00:00:00) Framework Intro
 ⏳ (00:04:51) Course Intro
@@ -48,3 +48,4 @@ Source code - https://github.com/bitfumes/fastapi-course
 ⏳ (03:28:37) JWT Access Token
 ⏳ (03:36:24) Route behind authentication
 ⏳ (03:51:00) Deploy fastAPI app
+```
