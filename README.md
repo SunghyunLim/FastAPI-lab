@@ -29,11 +29,11 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 ⏳ (00:55:58) Request Body
 ⏳ (01:03:58) Debugging **good!!**
 ⏳ (01:10:47) Pydantic Schemas
-> ⏳ (01:19:59) Database Connection
+⏳ (01:19:59) Database Connection
 ⏳ (01:25:37) Create Model and Tables
 ⏳ (01:33:36) Store blog to database
 ⏳ (01:38:51) Get blog from database
-⏳ (01:43:29) Exception & Status Code
+> ⏳ (01:43:29) Exception & Status Code
 ⏳ (01:53:46) Delete a blog
 ⏳ (02:08:02) Response Model
 ⏳ (02:15:56) Create User
