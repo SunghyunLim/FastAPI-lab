@@ -34,7 +34,7 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 ⏳ (01:33:36) Store blog to database
 ⏳ (01:38:51) Get blog from database
 ⏳ (01:43:29) Exception & Status Code
-> ⏳ (01:53:46) Delete a blog
+> ⏳ (01:53:46) Delete & Update a blog
 ⏳ (02:08:02) Response Model
 ⏳ (02:15:56) Create User
 ⏳ (02:23:07) Hash Password
