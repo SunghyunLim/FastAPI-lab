@@ -35,13 +35,13 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 ⏳ (01:38:51) Get blog from database
 ⏳ (01:43:29) Exception & Status Code
 ⏳ (01:53:46) Delete & Update a blog
-> ⏳ (02:08:02) Response Model
+⏳ (02:08:02) Response Model
 ⏳ (02:15:56) Create User
 ⏳ (02:23:07) Hash Password
 ⏳ (02:30:36) Show User
 ⏳ (02:35:05) Using Doc Tags
 ⏳ (02:37:58) Relationship
-⏳ (02:51:13) API Router
+> ⏳ (02:51:13) API Router
 ⏳ (03:04:08) API router path operators
 ⏳ (03:07:24) Blog & User respository
 ⏳ (03:18:08) Logn & verify Password
