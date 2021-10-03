@@ -43,8 +43,8 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 ⏳ (02:37:58) Relationship
 ⏳ (02:51:13) API Router
 ⏳ (03:04:08) API router path operators
-> ⏳ (03:07:24) Blog & User respository
-⏳ (03:18:08) Logn & verify Password
+⏳ (03:07:24) Blog & User respository
+> ⏳ (03:18:08) Logn & verify Password
 ⏳ (03:28:37) JWT Access Token
 ⏳ (03:36:24) Route behind authentication
 ⏳ (03:51:00) Deploy fastAPI app

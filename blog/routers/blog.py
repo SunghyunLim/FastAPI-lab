@@ -2,6 +2,7 @@ from typing import List
 from fastapi import APIRouter, Depends, status, HTTPException, Response
 from sqlalchemy.orm import Session
 from .. import schemas, database, models  
+from ..repository import blog
 
 router = APIRouter(
     prefix='/bloog',
@@ -11,8 +12,7 @@ get_db = database.get_db
 
 @router.get('/', response_model=List[schemas.ShowBlog])
 def all(db : Session= Depends(get_db)):
-    blogs = db.query(models.Blog).all()
-    return blogs
+    return blog.get_all(db)
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 def create(request: schemas.Blog, db : Session= Depends(get_db)):
