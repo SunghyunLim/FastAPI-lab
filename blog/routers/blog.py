@@ -19,25 +19,12 @@ def create(request: schemas.Blog, db : Session= Depends(get_db)):
     return blog.create(request, db)
 
 @router.delete('/{id}', status_code=status.HTTP_204_NO_CONTENT)
-def destory(id, db : Session= Depends(get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id)
-    if not blog.first():
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, 
-                detail=f'Blog with id {id} not found')
-
-    blog.delete(synchronize_session=False)
-    db.commit()
-    return 'done'
+def destory(id: int, db : Session= Depends(get_db)):
+    return blog.destory(id, db)
 
 @router.put('/{id}', status_code=status.HTTP_202_ACCEPTED)
-def update(id, request: schemas.Blog, db : Session=Depends(get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id)
-    if not blog.first():
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, 
-                detail=f'Blog with id {id} not found')
-    blog.update(request.dict())
-    db.commit()
-    return 'Updated Successfully'   
+def update(id: int, request: schemas.Blog, db : Session=Depends(get_db)):
+    return blog.update(id, request, db)
 
 # @app.get('/blog', response_model=List[schemas.ShowBlog])
 # def all(db : Session= Depends(get_db)):
@@ -45,11 +32,5 @@ def update(id, request: schemas.Blog, db : Session=Depends(get_db)):
 #     return blogs
 
 @router.get('/{id}', status_code=status.HTTP_200_OK, response_model=schemas.ShowBlog)
-def show(id, response: Response, db : Session= Depends(get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id).first()
-    if not blog:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, 
-                            detail = f'Blog with the id {id} is not available')
-        # response.status_code = status.HTTP_404_NOT_FOUND
-        # return {'detail':f'Blog with the id {id} is not available'}
-    return blog
+def show(id:int , db : Session= Depends(get_db)):
+    return blog.show(id, db)
