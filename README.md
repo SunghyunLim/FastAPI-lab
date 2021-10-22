@@ -47,5 +47,5 @@ FastAPI를 사용해서 RDB에 데이터 입력/수정/삭제 하고, 결과 확
 ⏳ (03:18:08) Logn & verify Password
 ⏳ (03:28:37) JWT Access Token
 ⏳ (03:36:24) Route behind authentication
-> ⏳ (03:51:00) Deploy fastAPI app
+> ⏳ (03:51:00) Deploy fastAPI app with Deta
 ```
